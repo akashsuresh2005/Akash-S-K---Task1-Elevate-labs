@@ -23,9 +23,9 @@ Following industry-standard data cleaning workflows and the direct hints provide
 *   **Missing Value Management (`.isnull()` / `.fillna()`):** Evaluated explicit null profiles. Categorical variables with severe missing values (`director`, `cast`, `country`) were gracefully imputed with `"Unknown"` to prevent dropping 30% of the observations. Records with minuscule missing entries (<0.1%) in structural keys (`date_added`, `rating`, `duration`) were cleanly removed.
 *   **Duplicate Rectification (`.drop_duplicates()`):** Inspected complete row spaces and primary identifier constraints (`show_id`) to identify and remove duplicate records.
 *   **Text Field Harmonization:** Fixed inconsistent data formatting by stripping accidental trailing whitespaces, normalizing category casing to title case, and replacing empty literal strings with system-compliant `NaN` tokens.
-*   **Temporal Standardization:** Converted the unstructured string-formatted `date_added` attribute into a strict, consistent ISO-compliant `YYYY-MM-DD` datetime object[cite: 1].
-*   **Column Schema Normalization:** Re-engineered all header identifiers into a uniform database layout (lowercase, no spaces, using `snake_case`)[cite: 1].
-*   **DataType Validation & Boundary Enforcement:** Validated that logical variables matched proper technical data types (e.g., year values cast strictly to integers) and checked for extreme future date outliers[cite: 1].
+*   **Temporal Standardization:** Converted the unstructured string-formatted `date_added` attribute into a strict, consistent ISO-compliant `YYYY-MM-DD` datetime object.
+*   **Column Schema Normalization:** Re-engineered all header identifiers into a uniform database layout (lowercase, no spaces, using `snake_case`).
+*   **DataType Validation & Boundary Enforcement:** Validated that logical variables matched proper technical data types (e.g., year values cast strictly to integers) and checked for extreme future date outliers.
 
 ---
 
@@ -47,8 +47,8 @@ The pipeline automatically tracks and compiles structural changes into a profess
 
 Akash-S-K---Task1-Elevate-labs/
 │
-├── task1_preprocessing.ipynb       # Complete step-by-step Google Colab data cleaning source code 
-├── README.md                       # Comprehensive documentation & project execution report 
-├── netflix_titles_raw.csv          # Unchanged, original raw data snapshot recorded at ingestion 
-├── netflix_titles_cleaned.csv      # Final normalized, ready-for-analysis dataset output [cite: 24, 46]
-└── cleaning_report.txt             # Auto-generated textual pipeline log with before/after metrics [cite: 6, 46]
+├── task1_preprocessing.ipynb       # Complete step-by-step Google Colab data cleaning source code
+├── README.md                       # Comprehensive documentation & project execution report
+├── netflix_titles_raw.csv          # Unchanged, original raw data snapshot recorded at ingestion
+├── netflix_titles_cleaned.csv      # Final normalized, ready-for-analysis dataset output
+└── cleaning_report.txt             # Auto-generated textual pipeline log with before/after metrics
