@@ -1,15 +1,15 @@
 # Akash-S-K---Task1-Elevate-labs
-# 🎬 Task 1: Data Cleaning and Preprocessing — Netflix Analytics Pipeline
+# Task 1: Data Cleaning and Preprocessing — Netflix Analytics Pipeline
 ---
 
-## 🎯 1. Project Objective
+## 1. Project Objective
 As outlined in the official task guidelines (`task 1.pdf`), the primary objective of this project is to clean and prepare a raw, unstructured dataset heavily populated with missing values, structural duplicates, and inconsistent data formats. 
 
 Data preprocessing is a critical step before any analytical modeling or visualization. This project builds a programmatic, reproducible, and production-ready data cleaning pipeline using **Python (Pandas)** to transform the raw Netflix Movies and TV Shows dataset into a clean, structured database asset.
 
 ---
 
-## 📦 2. Technical Stack & Environment
+## 2. Technical Stack & Environment
 * **Language:** Python 3.x
 * **Core Libraries:** Pandas (Data Manipulation), NumPy (Numerical Computations), Matplotlib & Seaborn (Data Quality Visualizations)
 * **Ingestion Method:** Automated sync via `kagglehub[pandas-datasets]` API wrapper
@@ -17,7 +17,7 @@ Data preprocessing is a critical step before any analytical modeling or visualiz
 
 ---
 
-## 🛠️ 3. Pipeline Implementation Summary
+## 3. Pipeline Implementation Summary
 Following industry-standard data cleaning workflows and the direct hints provided in `task 1.pdf`, the pipeline implements the following operations cell-by-cell:
 
 *   **Missing Value Management (`.isnull()` / `.fillna()`):** Evaluated explicit null profiles. Categorical variables with severe missing values (`director`, `cast`, `country`) were gracefully imputed with `"Unknown"` to prevent dropping 30% of the observations. Records with minuscule missing entries (<0.1%) in structural keys (`date_added`, `rating`, `duration`) were cleanly removed.
@@ -29,7 +29,7 @@ Following industry-standard data cleaning workflows and the direct hints provide
 
 ---
 
-## 📊 4. Operational Metrics (Before vs. After)
+## 4. Operational Metrics (Before vs. After)
 
 The pipeline automatically tracks and compiles structural changes into a professional validation table for evaluation[cite: 1]:
 
