@@ -44,11 +44,11 @@ The pipeline automatically tracks and compiles structural changes into a profess
 | **Data Schema Quality Status** | Non-Compliant / Raw | **Sign-off Approved / Production Ready** | **Passed**[cite: 1] |
 
 ---
-
+```text
 Akash-S-K---Task1-Elevate-labs/
 │
 ├── task1_preprocessing.ipynb       # Complete step-by-step Google Colab data cleaning source code
 ├── README.md                       # Comprehensive documentation & project execution report
 ├── netflix_titles_raw.csv          # Unchanged, original raw data snapshot recorded at ingestion
-├── netflix_titles_cleaned.csv      # Final normalized, ready-for-analysis dataset output
-└── cleaning_report.txt             # Auto-generated textual pipeline log with before/after metrics
+├── netflix_titles_cleaned.csv      # Final normalized, ready-for-analysis dataset output [cite: 24, 46]
+└── cleaning_report.txt             # Auto-generated textual pipeline log with before/after metrics [cite: 6, 46]
